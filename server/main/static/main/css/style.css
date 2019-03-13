@@ -1,0 +1,193 @@
+body {
+    background: #f8f8f8;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    border-bottom: 1px solid black;
+    display: flex;
+    padding-left: 30px;
+    height: 130px;
+    align-items: center
+}
+
+.menu {
+    display: flex;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+}
+
+.header a {
+    text-decoration-line: none;
+}
+
+.header span {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+
+.menu a {
+    color: green;
+    font-size: 22px;
+    font-family: cursive;
+    font-variant-caps: all-small-caps;
+}
+
+.menu a:hover {
+    color: cadetblue;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.caption {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background: #eaeaea;
+}
+
+.short {
+    font-size: 14px;
+    color: #707070;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.detail {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.characteristics {
+    color: black;
+    line-height: 20px;
+}
+
+/*
+.characteristics li {
+    list-style-image: url(../assets/markersmall.png);
+    color: black;
+    line-height: 20px;
+}
+*/
+
+.ris {
+    border: 1px solid cadetblue;
+    width: 200px;
+    float: left;
+    margin-right: 30px;
+}
+
+.clear_both {
+    clear: both;
+}
+
+.ris:hover {
+    border-color: transparent;
+    /*
+    border: 0px;
+    width: 202px;        
+*/
+}
+
+.none_line {
+    text-decoration-line: none;
+}
+
+.form_input input {
+    width: 200px;
+    height: 18px;
+    font-style: oblique;
+    color: #707070;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.input_mail:focus {
+    background-color: antiquewhite;
+    color: darkgoldenrod;
+}
+
+.form_input textarea {
+    width: 270px;
+    height: 100px;
+    font-style: oblique;
+    color: #707070;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.product p:first-letter {
+    color: green;
+    font-size: 20px;
+}
+
+.test_table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    /*    */
+}
+
+.test_table td {
+    border: 1px solid black;
+    /*    */
+}
+
+.footer {
+    border-top: 1px solid black;
+    text-align: right;
+    height: 80px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.buy {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid red;
+    width: 80px;
+    text-align: center;
+    line-height: 20px;
+    background-color: red;
+    color: white;
+}
+
+.buy:hover {
+    background-color: green;
+}
+
+.div_flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div_item {
+    margin: 20px;
+}
+
+/*
+1) Главная страница:
+1.6) Прижать меню к правому краю.
+6) *Расположить элементы на ваше усмотрение.
+7) *Страница контактов:
+7.1) Ширина карты 100%,
+7.2) Высота карты 374px.
+8) * Добавить фоновые изображения для header на каждой странице.
+11) * Задать высоту для верхней строки таблицы, отличную от всех остальных. */
