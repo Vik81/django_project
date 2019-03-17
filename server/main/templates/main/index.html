@@ -1,36 +1,11 @@
-<!DOCTYPE html>
-<html>
+{% extends 'server/master.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <title>товары для рыбалки</title>
-    <link rel="stylesheet" href="/static/main/css/style.css">
-</head>
+{% block page_title%}
+Главная страница
+{% endblock %}
 
-<body>
-    <div class="container">
-        <div class="header">
-            <a href="/"><img src="/static/main/assets/logo.png"></a>
-            <h1>товары для рыбалки</h1>
-            <ul class="menu">
-                <li><a href="/">Главная</a></li>
-                <li><a href="/catalog/">Каталог</a></li>
-                <li><a href="/contact/">Контакты</a></li>
-            </ul>
-        </div>
-        <div class="content">
-            <h2>О&nbsp;магазине</h2>
+{% block page_content%}
+<h2>Мы&nbsp;рады приветствовать вас на&nbsp;нашем сайте!</h2>
+<p></p>
 
-            <p>Мы&nbsp;рады приветствовать вас на&nbsp;нашем сайте!</p>
-
-            <p>Наш интернет-магазин создан для всех, кто любит рыбалку, туризм и&nbsp;активный отдых на&nbsp;природе!</p>
-
-            <p>Мы&nbsp;сделали процесс выбора и&nbsp;приобретения товаров максимально простым, удобным и&nbsp;выгодным для всех жителей России! Мы&nbsp;предлагаем только качественную, оригинальную продукцию самых известных, надежных и&nbsp;проверенных производителей. Ассортимент постоянно расширяется и&nbsp;пополняется новинками.</p>
-        </div>
-        <div class="footer">
-            <p>&copy; &laquo;Все права защищены&raquo;</p>
-        </div>
-    </div>
-</body>
-
-</html>
+{% endblock %}

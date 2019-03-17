@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block page_title%} {% endblock %}
+    </title>
+    <link rel="stylesheet" href="/static/main/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="/"><img src="/static/main/assets/logo.png"></a>
+            <h1>товары для рыбалки</h1>
+            <ul class="menu">
+                <li><a href="/">Главная</a></li>
+                <li><a href="/about">О нас</a></li>
+                <li><a href="/products/">Каталог</a></li>
+                <li><a href="/contact/">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="content">
+           {% block page_content%} {% endblock %}
+        </div>
+        <div class="footer">
+            <p>&copy; &laquo;Все права защищены&raquo;</p>
+        </div>
+    </div>
+</body>
+
+</html>
