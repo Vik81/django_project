@@ -1,9 +1,21 @@
 {% extends 'server/master.html' %}
 
-{% block page_title%}
+{% block page_title %}
 Detail products
 {% endblock %}
 
-{% block page_content%}
-            <h1>Detail products</h1>
+{% block page_content %}
+            <h1 class="product_name">{{ object.name| title }}</h1>
+<div class="product">
+<span class="product_descrption">
+	{{ object.description }}
+</span>
+<span class="product_cost">
+	{% if object.cost %}
+	{{ object.cost }}
+	{% else %}
+	<b>no cost</b>
+	{% endif %}
+</span>
+</div>
 {% endblock %}

@@ -4,7 +4,9 @@ from .views import (
     product_detail, product_list
 )
 
+app_name = 'products'
+
 urlpatterns = [
-    path('detail/', product_detail),
-    path('', product_list),
+    path('<int:pk>', product_detail, name='detail'),
+    path('', product_list, name='main'),
 ]

@@ -1,4 +1,4 @@
-{% extends 'server/master.html' %}
+﻿{% extends 'server/master.html' %}
 
 {% block page_title%}
 Каталог
@@ -6,8 +6,25 @@
 
 {% block page_content%}
             <h1>Каталог</h1>
+	<ul class="product_list">
+            {% for itm in object_list %}
+	<li class="product_list_item">
+	<span class="product_list_item-name">
+		{{ itm.name| title }}
+	</span>
+	<span class="product_list_item-description">
+		{{ itm.description }}
+	</span>	
+	<span class="product_list_item-cost">
+		{{ itm.cost }}
+	</span>
+	<a href="{% url 'products:detail' pk=itm.id %}" class="product_list_item-link">Go</a>
+	</li>
+
+		{% endfor %}
+	</ul>
             <div class="div_flex">            
-            <div class="div_item" ><a href="catalog/vobler.html"><img src="/static/main/assets/img_1_pre.jpg" alt=""><br>Воблер</a></div>
+            <div class="div_item"><a href="catalog/vobler.html"><img src="/static/main/assets/img_1_pre.jpg" alt=""><br>Воблер</a></div>
             <div class="div_item"><a href="catalog/fishing_line.html"><img src="/static/main/assets/img_2_pre.jpg" alt=""><br>Леска</a></div>
             <div class="div_item"><a href="catalog/Coil_is_spinning-free.html"><img src="/static/main/assets/img_3_pre.jpg" alt=""><br>Катушка безынерционная</a></div>
            </div> 

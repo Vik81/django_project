@@ -1,0 +1,27 @@
+[
+    {
+        "name": "avocado",
+        "description": "This is an avocado",
+        "cost": 100
+    },
+    {
+        "name": "Banana",
+        "description": "This is a banana",
+        "cost": 200
+    },
+    {
+        "name": "onion",
+        "description": "This is an onion",
+        "cost": 300
+    },
+    {
+        "name": "Potato",
+        "description": "This is a potato",
+        "cost": 400
+    },
+    {
+        "name": "apple",
+        "description": "This is a apple",
+        "cost": 0
+    }
+]
